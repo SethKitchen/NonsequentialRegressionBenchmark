@@ -2,23 +2,22 @@
 Comparison of basic models on obfuscated stock data. MultiLayer Perceptron, Linear, Random Forest, and Adaboost
 
 
-# Multi-layer Perceptron Regression
-AFTER 3 Weeks:
-Correlation: .053 Average
-MCC: .029333 Average
-
-
-# Linear Regression
-AFTER 2 Weeks:
-Correlation: .0485 Average
-MCC: .028 Average
-
-# Random Forest Regression
-AFTER 2 Weeks:
-Correlation: -.005 Average
-MCC: -0.0105
-
-# Adaboost Regression
-After 2 Weeks:
-Correlation: .0335 Average
-MCC: .0185
+|Multi-layer Perceptron|             |       |             |                 |      |Random Forest|       |        |       |                 |
+|----------------------|-------------|-------|-------------|-----------------|------|-------------|-------|--------|-------|-----------------|
+|ROUND                 |CORR         |MMC    |FNC          |CORR W/ METAMODEL|      |Round        |CORR   |MMC     |FNC    |CORR W/ METAMODEL|
+|250                   |0.0337       |0.01   |0.0035       |0.6614           |      |250          |-      |-       |-      |-                |
+|249                   |0.0366       |0.0037 |0.0069       |0.6457           |      |249          |0.0183 |0.0002  |0.008  |0.3716           |
+|248                   |0.0477       |0.0171 |0.0303       |0.6446           |      |248          |0.0175 |0.0025  |0.0044 |0.3617           |
+|247                   |0.0514       |0.0223 |0.0089       |0.5935           |      |247          |0.0145 |0.0009  |-0.0016|0.3515           |
+|246                   |0.0521       |0.0255 |0.0253       |0.5553           |      |246          |0.0117 |-0.0001 |-0.0052|0.3403           |
+|245                   |0.063        |0.0384 |0.0282       |0.5069           |      |             |       |        |       |                 |
+|AVERAGE               |0.04741666667|0.0195 |0.01718333333|0.6012333333     |      |AVERAGE      |0.0155 |0.000875|0.0014 |0.356275         |
+|                      |             |       |             |                 |      |             |       |        |       |                 |
+|Linear Regression     |             |       |             |                 |      |Adaboost     |       |        |       |                 |
+|ROUND                 |CORR         |MMC    |FNC          |CORR W/ METAMODEL|      |ROUND        |CORR   |MMC     |FNC    |CORR W/ METAMODEL|
+|250                   |0.0288       |0.0073 |0.0207       |0.6174           |      |250          |0.0233 |0.0075  |-0.0009|0.4763           |
+|249                   |0.0319       |0.0013 |0.0175       |0.6131           |      |249          |0.0379 |0.0123  |0.0104 |0.4601           |
+|248                   |0.0446       |0.0159 |0.0181       |0.6096           |      |248          |0.0423 |0.0183  |0.0158 |0.4566           |
+|247                   |0.0506       |0.0225 |0.0274       |0.5639           |      |247          |0.0517 |0.0272  |0.0149 |0.4422           |
+|246                   |0.06         |0.0322 |0.029        |0.5298           |      |246          |0.0442 |0.0232  |0.01   |0.4364           |
+|AVERAGE               |0.04318      |0.01584|0.02254      |0.58676          |      |AVERAGE      |0.03988|0.0177  |0.01004|0.45432          |
